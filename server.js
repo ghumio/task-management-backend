@@ -15,7 +15,7 @@ const corsOptions = {
   origin:
     process.env.NODE_ENV === "production"
       ? [
-          "https://your-frontend-url.netlify.app",
+          "https://dreamy-clafoutis-924e6d.netlify.app/login",
           "https://your-frontend-url.vercel.app",
         ]
       : ["http://localhost:3000", "http://localhost:3001"],
