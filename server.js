@@ -15,8 +15,15 @@ const app = express();
 const corsOptions = {
   origin:
     process.env.NODE_ENV === "production"
-      ? ["https://dreamy-clafoutis-924e6d.netlify.app/login"]
-      : ["http://localhost:3000", "http://localhost:3001"],
+      ? [
+          "https://dreamy-clafoutis-924e6d.netlify.app",
+          "https://your-frontend-url.vercel.app",
+        ]
+      : [
+          "http://localhost:3000",
+          "http://localhost:3001",
+          "http://localhost:3002",
+        ],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
